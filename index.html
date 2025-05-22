@@ -32,7 +32,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a href="" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Resum</a></li>
+                    <li class="nav-item"><a href="#card" class="nav-link">Resum</a></li>
                     <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                         id="navbarDropdown" aria-expanded="false" >portfolio</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -288,7 +288,149 @@
             </div>
         </section>
 
+        <section id="portfolio">
+            <div class="container mt-5">
+                <h2 class="text-center mb-5">Design & Video Protfolio</h2>
+                <input type="text" id="searchInput" class="form-control" placeholder="검색어를 입력하세요">
+                
+                <!-- 분류 버튼 -->
+                 <div class="text-center">
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="all">전 체</button>
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="design">디자인</button>
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="video">영 상</button>
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="figma">피그마</button>
+                </div>
+                    <!-- 포트폴리오 아이템 -->
+                     <div class="row mt-5" id="portfolio-items">
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design">
+                            <img src="./img/bunny-9423909_1280.jpg" alt="디자인 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal1">
+                            <h4 class="text-center mt-2">디자인 프로젝트 1</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design">
+                            <img src="./img/bunny-9423909_1280.jpg" alt="디자인 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal2">
+                            <h4 class="text-center mt-2">디자인 프로젝트 2</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video">
+                            <img src="./img/영상1.png" alt="영상 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                            <h4 class="text-center mt-2">영상 프로젝트 1</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video">
+                            <img src="./img/영상2.png" alt="영상 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                            <h4 class="text-center mt-2">영상 프로젝트 2</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma">
+                            <img src="./img/피그마1.png" alt="영상 1" class="img-fluid" data-bs-toggle="figmamodal" data-bs-target="#figmaModal1">
+                            <h4 class="text-center mt-2">피그마 프로젝트 1</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma">
+                            <img src="./img/bunny-9423909_1280.jpg" alt="영상 1" class="img-fluid" data-bs-toggle="figmamodal" data-bs-target="#figmaModal1">
+                            <h4 class="text-center mt-2">피그마 프로젝트 2</h4>
+                        </div>
+                        
+
+                     </div>
+
+                 
+
+            </div>
+
+        </section>
+
     </main>
+
+    <section id="modal-section">
+        <div class="container">
+            <div class="modal" id="designModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">디자인 프로젝트1</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <img src="./img/bunny-9423909_1280.jpg" class="img-fluid mb-3" alt="">
+                        <p>디자인 프로젝트 1에 대한 설명을....</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal" id="designModal2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">디자인 프로젝트2</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <img src="./img/카카오하니딥.png" class="img-fluid mb-3" alt="">
+                        <p>디자인 프로젝트 1에 대한 설명을....</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal" id="videoModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">영상 프로젝트1</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/2VAKcz9W4WM?autoplay=1&mute=1&control=1&loop=1" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                        <p>영상 프로젝트 1에 대한 설명을....</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal" id="videoModal2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">영상 프로젝트2</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SrDG6SqxUFw?autoplay=1&mute=1&control=1&loop=1"allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                        <p>영상 프로젝트 2에 대한 설명을....</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal" id="designModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">피그마 프로젝트2</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <img src="./img/bunny-9423909_1280.jpg" class="img-fluid mb-3" alt="">
+                        <p>피그마 프로젝트 2에 대한 설명을....</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
     <footer class="footer mt-auto py-3 bg-dark" >
         <div class="container text-center">

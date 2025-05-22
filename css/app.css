@@ -67,3 +67,12 @@
   z-index: 1;
   
 }
+
+
+.portfolio-item {
+  cursor: pointer;
+  margin-bottom: 1.8rem;
+}
+.modal-dialog {
+  max-width: 50%;
+}
