@@ -10,9 +10,15 @@
 
 :root {
   /* 전체폰트,*/
+
+  --background-color : #ffffff;
+  --default-color : #444444;
+  --heading-color : #050404;
+  --accent-color : #3fbbc0;
 }
 
 /*  career section start*/
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -68,6 +74,7 @@
   
 }
 
+/* career section end */
 
 .portfolio-item {
   cursor: pointer;
@@ -76,3 +83,57 @@
 .modal-dialog {
   max-width: 50%;
 }
+
+
+
+/* tabs section */
+
+.tabs {
+  overflow: hidden;
+}
+.tabs .nav-tabs {
+  border: 0;
+}
+
+.tabs .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: var(--default-color);
+  border-radius: 0;
+  border-right: 2px solid color-mix(in srgb, var(--default-color),transparent 90%);
+  font-weight: 600;
+  font-size: 15px;
+}
+#tabs .nav-link:hover {
+  color: var(--accent-color);
+}
+#tabs .nav-link.active {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-color: var(--background-color);
+}
+#tabs .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#tabs .details p {
+  color:color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+#tabs .details p:last-child {
+  margin-bottom: 0;
+
+}
+
+@media (max-width : 992px) {
+  #tabs .nav-link{
+    border: 0;
+    padding: 15px;
+  }
+}
+  #tabs .nav-link.active {
+    color: var(--background-color);
+    background:var(--accent-color);
+  }
